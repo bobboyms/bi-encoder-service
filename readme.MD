@@ -5,4 +5,13 @@ Service responsible for generating embeddings taking a list of strings as input 
 
 first clone this repo, enter into the folder and execute docker build command
 
-docker built -t 
+```
+docker built -t bi-encoder-service
+```
+
+## Run docker image
+```
+docker run -p 3000:5000 bi-encoder-service
+```
+
+## How use the service
