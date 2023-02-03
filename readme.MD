@@ -15,3 +15,11 @@ docker run -p 3000:5000 bi-encoder-service
 ```
 
 ## How use the service
+
+```
+curl --location --request POST 'http://localhost:3000/sentence-embedding' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "sentences" : ["Hello","world","my friend"]
+}'
+```
